@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="move('car')">
+  <div class="game">
+      <div class="score">
+
+      </div>
+      <div class="startScreen ">
+<img src="images/second.png" class="first" alt="">
+      </div>
+      <div class="endScreen">
+<!-- <img src="images/last.png" alt=""> -->
+      </div> 
+      <div class="gameArea hide" >
+        <div id="car"></div>
+      </div>
+  </div>
+</body>
+<script src="index.js">
+</script>
+<script>
+   let dragValue;
+
+function move(id){
+    let element = document.getElementById('car');
+    element.onmouseup = function(){
+        dragValue = element;
+    }
+}
+document.onmouseup = function(e){
+    dragValue = null;
+}
+document.onmousemove = function(e){
+    let w = e.pageX;
+    let v = e.pageY;
+    
+    car.style.top = w + "px";
+    car.style.left = v + "px";
+}
+</script>
+</html>
+
+
+
+

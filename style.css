@@ -1,0 +1,44 @@
+*{
+padding: 0;
+margin: 0;
+overflow-y: hidden;
+}
+
+.hide{
+   display: none;
+}
+.car{
+    height: 70px;
+    width: 50px;
+    background: red;
+    position: absolute;
+    align-items: center;
+    bottom: 100px;
+}
+#car{
+    height: 70px;
+    width: 50px;
+    background: red;
+    position: absolute;
+    align-items: center;
+    bottom: 100px;
+}
+.gameArea{
+    max-width: 400px;
+    height: 100vh;
+    background: #2c3e50;
+    margin: auto;
+    position:relative;
+    overflow: hidden;
+}
+.first{
+    width: 400px;
+    height: 100%;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    margin: auto;
+    position:fixed;
+    overflow: hidden;
+    display: table;
+    margin: 0 auto;
+}
